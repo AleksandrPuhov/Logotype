@@ -38,8 +38,9 @@
         rel="stylesheet">
 
     <!--build:css css/style.min.css -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- endbuild -->
 </head>
 
@@ -47,20 +48,28 @@
     <header class="header">
         <div class="header-top">
             <div class="wrapper flex-inner">
-                <div class="header-top-tel">
-                    <a href="">+38 (096) 309 21 45</a>
+                <div class="contact-ref-tel flex-inner">
+                    <img src="img/svg/phone.svg" alt="phone" height="16" width="16">
+                    <a href="tel:380963092145">+38 (096) 309 21 45</a>
                 </div>
-                <div class="header-top-email">
-                    <a href="">layout585@gmail.com</a>
+                <div class="contact-ref-email flex-grow flex-inner">
+                    <img src="img/svg/envelope-o.svg" alt="phone" height="16" width="16">
+                    <a href="mailto:layout585@gmail.com">layout585@gmail.com</a>
                 </div>
-                <div class="header-top-btn">
-                    <a href="">Бесплатная консультация</a>
+                <div class="contact-ref-btn flex-inner">
+                    <a href="">
+                        <svg width="28" height="28" viewBox="0 0 28 28">
+                            <path
+                                d="M10 4h8V2h-8v2zm18 10v7.5c0 1.375-1.125 2.5-2.5 2.5h-23A2.507 2.507 0 010 21.5V14h10.5v2.5c0 .547.453 1 1 1h5c.547 0 1-.453 1-1V14H28zm-12 0v2h-4v-2h4zm12-7.5v6H0v-6C0 5.125 1.125 4 2.5 4H8V1.5A1.5 1.5 0 019.5 0h9A1.5 1.5 0 0120 1.5V4h5.5C26.875 4 28 5.125 28 6.5z" />
+                        </svg>
+                        <span>Бесплатная консультация</span>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="header-content">
             <div class="wrapper flex-inner">
-                <div class="header-content-logo">
+                <div class="header-content-logo flex-inner">
                     <img src="img/logo.png" alt="Logo">
                 </div>
                 <nav class="header-content-menu">
@@ -74,12 +83,85 @@
             </div>
     </header>
 
-    <main>
-        <section class="slider">
+        <!-- <section class="slider">
             <div class="wrapper">
+                <div class="slider-inner">
 
+                    <div class="slider-content my-slider">
+                        <div>
+                            <img src="img/svg/bars.svg">
+                        </div>
+                        <div>
+                            <img src="img/svg/briefcase.svg">
+                        </div>
+                        <div>
+                            <img src="img/svg/map-marker.svg">
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-item-title">
+                            <h2>КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ 1</h2>
+                        </div>
+                        <div class="slider-item-text">
+                            <p>Полное прекращение существования юридического лица с сохранением легальности всей
+                                предыдущей деятельности.</p>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="slider-item-title">
+                            <h2>КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ 1</h2>
+                        </div>
+                        <div class="slider-item-text">
+                            <p>Полное прекращение существования юридического лица с сохранением легальности всей
+                                предыдущей деятельности.</p>
+                        </div>
+                    </div>
+
+                    <div class="slider-item">
+                        <div class="slider-item-title">
+                            <h2>КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ 1</h2>
+                        </div>
+                        <div class="slider-item-text">
+                            <p>Полное прекращение существования юридического лица с сохранением легальности всей
+                                предыдущей деятельности.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="slider-btn">
+                        <a>Оставить заявку</a>
+                    </div>
+
+                </div>
             </div>
-        </section>
+        </section> -->
+
+        <section class="lazy slider" data-sizes="50vw">
+            <div>
+              <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="http://placehold.it/650x300?text=1-650w 650w, http://placehold.it/960x300?text=1-960w 960w" data-sizes="100vw">
+            </div>
+            <div>
+              <img data-lazy="http://placehold.it/350x300?text=2-350w" data-srcset="http://placehold.it/650x300?text=2-650w 650w, http://placehold.it/960x300?text=2-960w 960w" data-sizes="100vw">
+            </div>
+            <div>
+              <img data-lazy="http://placehold.it/350x300?text=3-350w"  data-srcset="http://placehold.it/650x300?text=3-650w 650w, http://placehold.it/960x300?text=3-960w 960w" data-sizes="100vw">
+            </div>
+            <div>
+              <img data-lazy="http://placehold.it/350x300?text=4-350w"  data-srcset="http://placehold.it/650x300?text=4-650w 650w, http://placehold.it/960x300?text=4-960w 960w" data-sizes="100vw">
+            </div>
+            <div>
+              <img data-lazy="http://placehold.it/350x300?text=5-350w"  data-srcset="http://placehold.it/650x300?text=5-650w 650w, http://placehold.it/960x300?text=5-960w 960w" data-sizes="100vw">
+            </div>
+            <div>
+              <!-- this slide should inherit the sizes attr from the parent slider -->
+              <img data-lazy="http://placehold.it/350x300?text=6-350w"  data-srcset="http://placehold.it/650x300?text=6-650w 650w, http://placehold.it/960x300?text=6-960w 960w">
+            </div>
+          </section>
+        
+
+
         <section class="services">
             <div class="wrapper">
 
@@ -105,7 +187,6 @@
 
             </div>
         </section>
-    </main>
 
     <footer class="footer">
         <div class="footer-contact">
@@ -121,10 +202,21 @@
         </div>
     </footer>
 
-</body>
+    <!--build:js js/main.min.js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script scr="./js/slick.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+    
+          $(".lazy").slick({
+            lazyLoad: 'ondemand', // ondemand progressive anticipated
+            infinite: true
+          });
+        });
+    </script>
+    <!-- endbuild -->
 
-<!--build:js js/main.min.js -->
-<script src="js/main.js"></script>
-<!-- endbuild -->
+</body>
 
 </html>

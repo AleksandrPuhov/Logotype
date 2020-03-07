@@ -12,6 +12,10 @@ ul,li {
    padding: 0;
 }
 
+body {
+    @include text-main;
+}
+
 .wrapper {
     max-width: 1140px;
     padding: 0 15px;
@@ -21,3 +25,8 @@ ul,li {
 .flex-inner {
     display: flex;
 }
+
+.flex-grow {
+    flex-grow: 1;;
+}
+

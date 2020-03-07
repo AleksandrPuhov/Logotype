@@ -1,0 +1,40 @@
+// .slider {
+//     background: url(../img/slider-bg-1.png) no-repeat 50% 50%;
+//     background-size: cover;
+//     height: 500px;
+//     position: relative;
+
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         left: 0;
+//         bottom: 0;
+//         background-color: rgba($color: #000000, $alpha: .35);
+//     }
+
+//     &-inner{
+//         position: relative;
+//         padding: 70px 0 70px;
+//         z-index: 5;
+//     }
+
+//     &-item {
+//         &-title h2 {
+//             @include roboto-medium;
+//             font-size: 30px;
+//             color: white;
+//             text-transform: uppercase;
+//             display: block;
+//         }
+
+//         &-text p {
+//             @include pt-serif-regular;
+//             @include text-large; 
+//             color: $color-text-light;
+//             display: block;
+//         }
+//     }
+// }
+

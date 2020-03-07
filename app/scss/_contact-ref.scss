@@ -1,0 +1,50 @@
+.contact-ref {
+    &-tel, &-email, &-btn {
+        a {
+            @include roboto-regular;
+            font-size: 16px;
+            display: block;
+            transition: $transition-time;
+        }
+    }
+    &-tel, &-email {
+        a {
+            color: $color-text-light;
+            align-self: center;
+            margin-right:20px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        img {
+            align-self: center;
+            margin-right: 10px;
+        }
+    }
+    &-btn {
+        a {
+            display: flex;
+            color: #1b1b1b;
+            padding: 15px 20px;
+            background-color: $color-primaty;
+            border: 2px solid $color-primaty ;
+            svg {
+                z-index: 5;
+                height: 16px;
+                width: 16px;
+                margin-right: 10px;
+                path {
+                    fill:$color-top-and-bottom;
+                    transition: $transition-time;
+                }
+            }
+            &:hover {
+                background-color:transparent;
+                color: $color-text-light;
+                svg path {
+                    fill: $color-text-light;
+                }
+            }
+        }
+    }
+}

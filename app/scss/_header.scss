@@ -1,35 +1,28 @@
 .header {
-
     &-top { 
-
         background-color:$color-top-and-bottom;
-
-        &-tel {
-            a {
-                color: $text-color-white;
-            }
-        }
-
-        &-email {
-            flex-grow: 1;
-            
-            a {
-                color: $text-color-white;
-            }
-        }
-        &-btn { 
-            background-color: $color-primaty;
-            a {
-                color:$color-top-and-bottom;
-
-            }
-        }
-     }
-
+    }
     &-content {
-        &-logo{
+        &-logo {
             flex-grow: 1;
+            align-items: center;
         }
-        &-menu{}
+        &-menu {
+            ul{
+                padding: 35px 0 25px ;
+            }
+            a {
+                color: #323232;
+                font-size: 16px;
+                display: block;
+                padding: 10px 20px;
+                margin-left: 5px;
+                border: 2px solid transparent;
+                transition: $transition-time;
+            }
+            a:hover {
+                border: 2px solid $color-primaty;
+            }
+        }
     }
 }
