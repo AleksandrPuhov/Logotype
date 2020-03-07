@@ -1,0 +1,35 @@
+.header {
+
+    &-top { 
+
+        background-color:$color-top-and-bottom;
+
+        &-tel {
+            a {
+                color: $text-color-white;
+            }
+        }
+
+        &-email {
+            flex-grow: 1;
+            
+            a {
+                color: $text-color-white;
+            }
+        }
+        &-btn { 
+            background-color: $color-primaty;
+            a {
+                color:$color-top-and-bottom;
+
+            }
+        }
+     }
+
+    &-content {
+        &-logo{
+            flex-grow: 1;
+        }
+        &-menu{}
+    }
+}

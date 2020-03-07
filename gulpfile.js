@@ -12,8 +12,8 @@ const sourcemaps = require('gulp-sourcemaps');
 gulp.task('scss', () => {
     return gulp.src('./app/scss/**/*.scss')
         .pipe(sourcemaps.init())
-        //        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-        .pipe(sass().on('error', sass.logError))
+        // .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))  // CSS output style (nested | expanded | compact | compressed)
+        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./app/css'))
         .pipe(browserSync.reload({
