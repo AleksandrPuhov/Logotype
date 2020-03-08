@@ -1,7 +1,24 @@
-$(document).on('ready', function () {
+$(document).ready(function () {
 
-    $(".lazy").slick({
-        lazyLoad: 'ondemand', // ondemand progressive anticipated
-        infinite: true
+
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        mouseDrag: false,
+        items: 1,
+        nav: false,
+        dots: false
     });
+
+    $('.btn-slider-left').click(function () {
+        owl.trigger('prev.owl.carousel');
+    });
+
+    $('.btn-slider-right').click(function () {
+        owl.trigger('next.owl.carousel');
+    });
+
+
 });
