@@ -12,7 +12,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: rgba($color: #000000, $alpha: 0.35);
+        background-color: rgba($color: #000000, $alpha: 0.45);
     }
 
     &-inner {
@@ -43,7 +43,33 @@
         }
     }
 
-    &-nav {
-        justify-content: space-between;
+    &-carousel {
+        .owl-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            button.owl-prev,
+            button.owl-next {
+                background-color: transparent;
+                border: 2px solid white;
+                transition: $transition-time;
+                color: white;
+                font-size: 18px;
+                padding: 6px 16px 10px;
+                display: block;
+
+                &:hover {
+                    background-color: $color-primaty;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    &-btn {
+        
     }
 }
