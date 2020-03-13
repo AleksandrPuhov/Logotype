@@ -54,10 +54,12 @@
                 background-color: transparent;
                 border: 2px solid white;
                 transition: $transition-time;
-                color: white;
-                font-size: 18px;
-                padding: 6px 16px 10px;
                 display: block;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 6px;
+                height: 40px;
+                width: 40px;
 
                 &:hover {
                     background-color: $color-primaty;
@@ -65,11 +67,23 @@
                 &:focus {
                     outline: none;
                 }
+                span {
+                    display: none;
+                }
+            }
+
+            button.owl-next {
+                background-image: url(../img/svg/angle-right.svg);
+            }
+            button.owl-prev {
+                background-image: url(../img/svg/angle-left.svg);
             }
         }
     }
 
     &-btn {
-        
+        max-width: 180px;
+        margin: 20px auto;
+        color: white;
     }
 }
