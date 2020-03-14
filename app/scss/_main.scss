@@ -39,9 +39,8 @@ h1, h2, h3, h4, h5, h6, p {
     @include roboto-medium;
     font-size: 14px;
     text-align: center;
-    padding: 10px 20px;
-   
-    border: 2px solid $color-primaty;
+    padding: 10px 40px 10px 20px;
+    border: 1px solid $color-primaty;
     background-color: transparent;
     position: relative;
     display: block;
@@ -50,16 +49,16 @@ h1, h2, h3, h4, h5, h6, p {
     &::after {
         content: "";
         position: absolute;
-        background-image: url(../img/svg/angle-right.svg);
+        background-image: url(../img/icons/angle-right.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 6px;
         background-color: $color-primaty;
-        border: 2px solid $color-primaty;
+        border: 1px solid $color-primaty;
         height: 100%;
         width: 20px;
-        right: -20px;
-        top: -2px;
+        right: 0;
+        top: -1px;
     }
     &:hover {
         background-color: $color-btn-hover;

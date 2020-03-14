@@ -3,7 +3,7 @@
     background-size: cover;
     min-height: 500px;
     position: relative;
-    padding: 70px 0 70px;
+    padding: 100px 0 70px;
 
     &::before {
         content: "";
@@ -12,7 +12,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: rgba($color: #000000, $alpha: 0.45);
+        background-color: $background-blending;
     }
 
     &-inner {
@@ -21,7 +21,7 @@
     }
 
     &-item {
-        max-width: 660px;
+        max-width: 670px;
         margin: 0 auto;
         text-align: center;
 
@@ -32,7 +32,8 @@
             text-transform: uppercase;
             display: block;
             line-height: 36px;
-            margin: 40px 0;
+            margin: 15px 0;
+            letter-spacing: 0.05em;
         }
 
         p {
@@ -52,7 +53,7 @@
             button.owl-prev,
             button.owl-next {
                 background-color: transparent;
-                border: 2px solid white;
+                border: 1px solid white;
                 transition: $transition-time;
                 display: block;
                 background-repeat: no-repeat;
@@ -73,10 +74,10 @@
             }
 
             button.owl-next {
-                background-image: url(../img/svg/angle-right.svg);
+                background-image: url(../img/icons/angle-right.svg);
             }
             button.owl-prev {
-                background-image: url(../img/svg/angle-left.svg);
+                background-image: url(../img/icons/angle-left.svg);
             }
         }
     }
