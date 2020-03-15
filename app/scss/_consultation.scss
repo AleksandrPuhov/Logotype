@@ -5,11 +5,12 @@
         height: 100%;
     }
     &-content {
-        padding: 30px 20px 30px 0;
+        padding: 50px 20px 40px 0;
         width: 100%;
     }
     &-form {
         display: flex;
+        margin-top: 25px;
 
         label {
             @include roboto-regular;
@@ -26,6 +27,14 @@
         input,
         select {
             height: 40px;
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: url(../img/icons/angle-down.svg) 96% / 15% no-repeat;
+            background-size: 10px 12px;
         }
 
         textarea {
@@ -53,6 +62,11 @@
 
         button {
             align-self: flex-end;
+            width: 230px;
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 

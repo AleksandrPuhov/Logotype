@@ -10,5 +10,15 @@ $(document).ready(function () {
         nav:true
     });
 
+    $('.news-content-slider-theme').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        responsiveClass: true,
+        mouseDrag: false,
+        items: 1,
+        dots: false,
+    });
+    
 
 });

@@ -28,3 +28,14 @@
     font-size: 18px;
     line-height: 24px;
 }
+
+@mixin slide-arrow {
+    background-color: transparent;
+    transition: $transition-time;
+     display: block;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 6px;
+     height: 40px;
+     width: 40px;
+}
