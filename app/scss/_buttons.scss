@@ -1,0 +1,47 @@
+.btn-main {
+    @include roboto-medium;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 40px 10px 20px;
+    border: 1px solid $color-primaty;
+    background-color: transparent;
+    position: relative;
+    display: block;
+    transition: $transition-time;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../img/icons/angle-right.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 6px;
+        background-color: $color-primaty;
+        border: 1px solid $color-primaty;
+        height: 100%;
+        width: 20px;
+        right: 0;
+        top: -1px;
+    }
+    &:hover {
+        background-color: $color-btn-hover;
+    }
+}
+
+.btn-secondary {
+    @include roboto-regular;
+    font-size: 14px;
+    color: #373636;
+    border: 3px solid #e6e6e6;
+    padding: 7px 20px;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    transition: $transition-time;
+    width: 225px;
+    letter-spacing: 0.03em;
+
+    &:hover {
+        background-color: $color-primaty;
+    }
+}

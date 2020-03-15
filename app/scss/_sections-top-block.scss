@@ -1,0 +1,24 @@
+.top-block {
+    display: flex;
+
+    &-line {
+        width: 100px;
+        height: 2px;
+        background-color: $color-primaty;
+        margin: 7px 0;
+    }
+    &-info {
+        max-width: 400px;
+        margin-left: 30px;
+
+        h3 {
+            @include roboto-medium;
+            font-size: 24px;
+            color: $services-title-color;
+        }
+        p {
+            margin-top: 15px;
+            color: $services-text-color;
+        }
+    }
+}

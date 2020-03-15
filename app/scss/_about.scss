@@ -1,0 +1,37 @@
+.about {
+    background: url(../img/about-bg.png) no-repeat 50% 50%;
+    background-size: cover;
+    min-height: 300px;
+    position: relative;
+    padding: 40px 0 40px;
+    color: white;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: $background-blending;
+    }
+    &-inner {
+        position: relative;
+        z-index: 5;
+    }
+
+    h3 {
+        @include roboto-medium;
+        font-size: 24px;
+    }
+    p {
+        max-width: 620px;
+        letter-spacing: 0.015em;
+        line-height: 25px;
+        margin: 25px 0 30px;
+    }
+    a {
+        max-width: 180px;
+        color: white;
+    }
+}

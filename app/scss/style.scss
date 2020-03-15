@@ -4,9 +4,16 @@
 @import "mixins.scss";
 @import "main.scss";
 
+//reused
+@import "buttons.scss";
 @import "contact-ref.scss";
+@import "sections-top-block.scss";
 
+//sections
 @import "header.scss";
 @import "slider.scss";
 @import "services.scss";
+@import "about.scss";
+@import "consultation.scss";
+
 

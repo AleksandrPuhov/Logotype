@@ -109,15 +109,15 @@
     <section class="services">
         <div class="wrapper">
             <div class="services-top">
-                <div class="services-top-block">
-                    <div class="services-top-line"></div>
-                    <div class="services-top-info">
-                        <h3 class="services-top-info-title">Наши Услуги</h3>
-                        <p class="services-top-info-text">Комплексный подход к вашему вопросу, своевременная правовую
+                <div class="top-block">
+                    <div class="top-block-line"></div>
+                    <div class="top-block-info">
+                        <h3>Наши Услуги</h3>
+                        <p>Комплексный подход к вашему вопросу, своевременная правовую
                             помощь, представление интересов во всех судебных инстанциях.</p>
                     </div>
                 </div>
-                <a href="" target="_blank">Показать все услуги</a>
+                <a href="" target="_blank" class="btn-secondary">Показать все услуги</a>
             </div>
             <div class="services-list">
                 <ul>
@@ -139,11 +139,11 @@
                             <h4>Адвокатское сопровождение</h4>
                             <p>Мы гарантируем полное профессиональное обслуживание клиентов в заявленных сферах
                                 деятельности и соблюдение конфиденциальности.</p>
-                                <div class="services-list-item-nav">
-                                    <a href="" target="_blank" class="services-list-item-btn-left">Подробнее</a>
-                                    <a href="" target="_blank" class="btn-main services-list-item-btn-right">Заказать</a>
-                                </div>
+                            <div class="services-list-item-nav">
+                                <a href="" target="_blank" class="services-list-item-btn-left">Подробнее</a>
+                                <a href="" target="_blank" class="btn-main services-list-item-btn-right">Заказать</a>
                             </div>
+                        </div>
                     </li>
                     <li>
                         <div class="services-list-item">
@@ -151,27 +151,72 @@
                             <h4>Налоговый аудит</h4>
                             <p>Налоговый аудит проводят перед проведением налоговых проверок; при оценке возможных
                                 налоговых рисков; при оптимизации налогообложения.</p>
-                                <div class="services-list-item-nav">
-                                    <a href="" target="_blank" class="services-list-item-btn-left">Подробнее</a>
-                                    <a href="" target="_blank" class="btn-main services-list-item-btn-right">Заказать</a>
-                                </div>
+                            <div class="services-list-item-nav">
+                                <a href="" target="_blank" class="services-list-item-btn-left">Подробнее</a>
+                                <a href="" target="_blank" class="btn-main services-list-item-btn-right">Заказать</a>
                             </div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
     <section class="about">
-        <div class="wrapper">
-            <h3></h3>
-            <p></p>
-            <a href="" target="_blank"></a>
+        <div class="wrapper about-inner">
+            <h3>О компании </h3>
+            <p>Компания специализируется на оказании услуг в сфере корпоративного права, налогового консалтинга,
+                представительства в судах, ликвидации и банкротства предприятий. На сегодняшний день, коллектив компании
+                объединяет высокопрофессиональных экспертов имеющих специализации в отдельных областях права.</p>
+            <a href="" target="_blank" class="btn-main">Узнать больше</a>
 
         </div>
     </section>
-    <section class="form">
-        <div class="wrapper">
+    <section class="consultation">
+        <div class="wrapper consultation-inner">
+            <div class="consultation-content">
+                <div class="top-block">
+                    <div class="top-block-line"></div>
+                    <div class="top-block-info">
+                        <h3>Получить Консультацию</h3>
+                        <p>Комплексный подход к вашему вопросу, своевременная правовую
+                            помощь, представление интересов во всех судебных инстанциях.</p>
+                    </div>
+                </div>
+                <form action="" autocomplete="on" class="consultation-form">
 
+                    <div class="consultation-form-left">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email">
+
+                        <label for="tel">Контактный телефон</label>
+                        <input id="tel" type="tel">
+
+                        <label for="name">ФИО</label>
+                        <input id="name" type="text">
+
+                        <label for="theme">Тема вопроса:</label>
+                        <select id="theme">
+                            <option value="1">--1--</option>
+                            <option value="2">--2--</option>
+                            <option value="3">--3--</option>
+                            <option value="4">--4--</option>
+                        </select>
+                    </div>
+
+                    <div class="consultation-form-right">
+                        <div class="consultation-form-right-wrap">
+                            <label for="messege">Сообщение</label>
+                            <textarea id="messege"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-main">Получить консультацию</button>
+
+
+                    </div>
+                </form>
+
+            </div>
+            <img src="./img/form-img.png" alt="woman">
         </div>
     </section>
     <section class="achievements">

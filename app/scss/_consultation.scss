@@ -1,0 +1,62 @@
+.consultation {
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+    &-content {
+        padding: 30px 20px 30px 0;
+        width: 100%;
+    }
+    &-form {
+        display: flex;
+
+        label {
+            @include roboto-regular;
+            margin: 15px 5px 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            border: 1px solid $form-input-color;
+            padding: 10px 10px;
+        }
+
+        input,
+        select {
+            height: 40px;
+        }
+
+        textarea {
+            resize: none;
+            height: 196px;
+        }
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            min-width: 265px;
+        }
+        &-right {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+            flex-basis: 560px;
+            justify-content: space-between;
+
+            &-wrap {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        button {
+            align-self: flex-end;
+        }
+    }
+
+    img {
+        align-self: flex-end;
+    }
+}
