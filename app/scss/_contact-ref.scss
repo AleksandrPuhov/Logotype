@@ -1,5 +1,5 @@
 .contact-ref {
-    &-tel, &-email, &-btn {
+    &-tel, &-email, &-btn, &-address {
         a {
             @include roboto-regular;
             font-size: 15px;
@@ -7,7 +7,8 @@
             transition: $transition-time;
         }
     }
-    &-tel, &-email {
+    &-tel, &-email, &-address {
+        display: flex;
         a {
             color: $color-text-light;
             align-self: center;
@@ -21,13 +22,21 @@
             margin-right: 10px;
         }
     }
+
+    &-address {
+        img {
+            margin-left: 4px;
+        }
+    }
+
     &-btn {
         a {
             display: flex;
             color: #1b1b1b;
             padding: 12px 20px;
             background-color: $color-primaty;
-            border: 2px solid $color-primaty ;
+            border: 2px solid $color-primaty;
+            max-width: 265px;
             svg {
                 z-index: 5;
                 height: 16px;
