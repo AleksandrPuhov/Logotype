@@ -1,4 +1,8 @@
 .contact-ref {
+    &-links {
+        display: flex;
+    }
+   
     &-tel, &-email, &-btn, &-address {
         a {
             @include roboto-regular;

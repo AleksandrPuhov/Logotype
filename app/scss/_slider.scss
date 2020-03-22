@@ -1,9 +1,8 @@
 .slider {
     background: url(../img/slider-bg.png) no-repeat 50% 50%;
     background-size: cover;
-    min-height: 500px;
     position: relative;
-    padding: 100px 0 70px;
+    padding: 100px 0;
 
     &::before {
         content: "";
@@ -52,10 +51,9 @@
 
             button.owl-prev,
             button.owl-next {
-                
                 @include slide-arrow;
                 border: 1px solid white;
-                
+
                 &:hover {
                     background-color: $color-primaty;
                 }
@@ -80,5 +78,16 @@
         max-width: 180px;
         margin: 20px auto;
         color: white;
+    }
+
+    @media screen and (max-width: $tablet-small-size) {
+        padding: 60px 0;
+        &-carousel {
+            .owl-nav button.owl-prev,
+            .owl-nav button.owl-next {
+                height: 50px;
+                width: 50px;
+            }
+        }
     }
 }

@@ -8,29 +8,55 @@
         }
         &-info {
             margin-right: 10px;
-            h5 {
-                @include roboto-medium;
-                font-size: 16px;
-                letter-spacing: 0.05em;
-                color: #ffffff;
-            }
-            p {
-                @include roboto-regular;
-                max-width: 350px;
-                margin: 15px 0 20px;
-                color: $color-text-light;
+            display: flex;
+            flex-direction: column;
+            &-text {
+                h5 {
+                    @include roboto-medium;
+                    font-size: 16px;
+                    letter-spacing: 0.05em;
+                    color: #ffffff;
+                }
+                p {
+                    @include roboto-regular;
+                    max-width: 350px;
+                    margin: 15px 0 20px;
+                    color: $color-text-light;
+                }
             }
 
-            .contact-ref-tel,
-            .contact-ref-email,
-            .contact-ref-address {
-                margin: 20px 0;
+            &-ref {
+                .contact-ref-tel,
+                .contact-ref-email,
+                .contact-ref-address {
+                    margin: 20px 0;
+                }
             }
         }
 
         &-map {
             flex-basis: 635px;
             height: 255px;
+        }
+
+        @media screen and (max-width: $tablet-size) {
+            &-inner {
+                flex-direction: column;
+            }
+            &-info {
+                flex-direction: row;
+                margin-right: 0;
+                &-text {
+                    margin-right: 10px;
+                }
+                &-ref {
+                    flex-basis: 85%;
+                }
+            }
+
+            &-map {
+                flex-basis: auto;
+            }
         }
     }
 

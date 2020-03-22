@@ -96,7 +96,7 @@
         }
 
         &-info {
-            padding: 0 15px;
+            padding: 0 15px 20px;
             ul {
                 display: flex;
                 justify-content: space-between;
@@ -144,6 +144,23 @@
             }
             p {
                 color: $services-text-color;
+            }
+        }
+
+        @media screen and (max-width: $tablet-wide-size) {
+            flex-direction: column;
+            &-info {
+                order: -1;
+            }
+        }
+
+        @media screen and (max-width: $tablet-small-size) {
+            &-slider-theme {
+                .owl-nav button.owl-prev,
+                .owl-nav button.owl-next {
+                    height: 50px;
+                    width: 50px;
+                }
             }
         }
     }

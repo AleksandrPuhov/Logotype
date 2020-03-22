@@ -8,17 +8,28 @@
         margin: 7px 0;
     }
     &-info {
-        max-width: 400px;
         margin-left: 30px;
-
+        max-width: 400px;
         h3 {
             @include roboto-medium;
             font-size: 24px;
             color: $services-title-color;
+            line-height: 1;
         }
         p {
             margin-top: 15px;
             color: $services-text-color;
+        }
+    }
+
+    @media screen and (max-width: $tablet-small-size) {
+        &-line {
+            display: none;
+        }
+        &-info {
+            margin-left: 0;
+            max-width: none;
+
         }
     }
 }

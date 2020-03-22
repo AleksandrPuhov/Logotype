@@ -1,6 +1,6 @@
 .services {
     padding: 65px 0;
-    
+
     &-top {
         display: flex;
         justify-content: space-between;
@@ -17,11 +17,20 @@
             display: flex;
             justify-content: space-between;
             margin: 0 -15px;
+
+            @media screen and (max-width: $tablet-size) {
+                flex-direction: column;
+                li {
+                    min-height: auto;
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
+            }
         }
 
         li {
             flex-basis: 33.333%;
-            padding: 0 15px;
+            padding: 15px;
             min-height: 365px;
         }
 
@@ -35,6 +44,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @media screen and (max-width: $tablet-wide-size) {
+                padding: 40px 20px 25px;
+            }
 
             img {
                 height: 60px;
@@ -57,6 +70,7 @@
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
+                margin-top: 10px;
             }
             &-btn-left,
             &-btn-right {
@@ -67,6 +81,7 @@
                 @include roboto-regular;
                 text-decoration: underline;
                 transition: $transition-time;
+                margin-right: 10px;
                 &:hover {
                     color: $color-primaty;
                 }

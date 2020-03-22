@@ -40,6 +40,7 @@
         textarea {
             resize: none;
             height: 196px;
+            margin-bottom: 10px;
         }
 
         &-left {
@@ -72,5 +73,27 @@
 
     img {
         align-self: flex-end;
+    }
+
+    @media screen and (max-width: $tablet-size) {
+        &-content {
+            padding: 50px 0 40px 0;
+        }
+        img {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $tablet-small-size) {
+        &-form {
+            flex-direction: column;
+            &-left {
+
+            }
+            &-right {
+                margin-left: 0;
+                flex-basis: auto;
+            }
+        }
     }
 }

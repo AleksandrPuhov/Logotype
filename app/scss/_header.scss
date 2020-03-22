@@ -1,15 +1,28 @@
 .header {
-    &-top { 
-        background-color:$color-top-and-bottom;
+    &-top {
+        background-color: $color-top-and-bottom;
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &-content {
+        position: relative;
+        &-inner {
+            display: flex;
+        }
         &-logo {
-            flex-grow: 1;
+            display: flex;
             align-items: center;
         }
         &-menu {
-            ul{
-                padding: 35px 0 25px ;
+            padding: 35px 0 25px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            ul {
+                display: flex;
+                position: relative;
             }
             a {
                 @include roboto-regular;
@@ -23,6 +36,51 @@
             }
             a:hover {
                 border: 1px solid $color-primaty;
+            }
+            &-btn {
+                display: none;
+                height: 30px;
+                width: 30px;
+                cursor: pointer;
+                transition: $transition-time;
+
+                &:hover {
+                    fill: $color-primaty;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $tablet-small-size) {
+        &-top {
+            padding: 10px 0;
+            &-inner {
+                flex-direction: column;
+                align-items: center;
+                .contact-ref-links {
+                }
+                .contact-ref-btn {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        &-content {
+            &-menu {
+                ul {
+                    //display: none;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    width: 100%;
+                    z-index: 40;
+                    flex-direction: column;
+                    background-color: red;
+                }
+
+                &-btn {
+                    display: block;
+                }
             }
         }
     }

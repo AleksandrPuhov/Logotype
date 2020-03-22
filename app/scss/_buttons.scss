@@ -38,8 +38,9 @@
     display: block;
     background-color: transparent;
     transition: $transition-time;
-    width: 225px;
+    min-width: 225px;
     letter-spacing: 0.03em;
+    margin-left: 10px;
 
     &:hover {
         background-color: $color-primaty;
