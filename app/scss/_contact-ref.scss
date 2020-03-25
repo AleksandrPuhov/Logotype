@@ -2,8 +2,11 @@
     &-links {
         display: flex;
     }
-   
-    &-tel, &-email, &-btn, &-address {
+
+    &-tel,
+    &-email,
+    &-btn,
+    &-address {
         a {
             @include roboto-regular;
             font-size: 15px;
@@ -11,12 +14,14 @@
             transition: $transition-time;
         }
     }
-    &-tel, &-email, &-address {
+    &-tel,
+    &-email,
+    &-address {
         display: flex;
         a {
-            color: $color-text-light;
+            color: $contact-ref-text;
             align-self: center;
-            margin-right:20px;
+            margin-right: 20px;
             &:hover {
                 text-decoration: underline;
             }
@@ -36,7 +41,7 @@
     &-btn {
         a {
             display: flex;
-            color: #1b1b1b;
+            color: $contact-ref-btn-text;
             padding: 12px 20px;
             background-color: $color-primaty;
             border: 2px solid $color-primaty;
@@ -47,15 +52,15 @@
                 width: 16px;
                 margin-right: 10px;
                 path {
-                    fill:$color-top-and-bottom;
+                    fill: $header-top-bg-color;
                     transition: $transition-time;
                 }
             }
             &:hover {
-                background-color:transparent;
-                color: $color-text-light;
+                background-color: transparent;
+                color: $contact-ref-text;
                 svg path {
-                    fill: $color-text-light;
+                    fill: $contact-ref-text;
                 }
             }
         }

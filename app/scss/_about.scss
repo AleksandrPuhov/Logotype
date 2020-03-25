@@ -4,7 +4,7 @@
     min-height: 300px;
     position: relative;
     padding: 40px 0 40px;
-    color: white;
+    color: $about-color-text;
 
     &::before {
         content: "";
@@ -32,6 +32,13 @@
     }
     a {
         max-width: 180px;
-        color: white;
+        color: $about-color-text;
+    }
+
+    @media screen and (max-width: $phablet) {
+        text-align: center;
+        a {
+            margin: 0 auto;
+        }
     }
 }

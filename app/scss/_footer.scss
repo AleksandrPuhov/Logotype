@@ -1,6 +1,6 @@
 .footer {
     &-contact {
-        background-color: #595959;
+        background-color: $footer-contacts-bg-color;
         &-inner {
             display: flex;
             justify-content: space-between;
@@ -15,13 +15,13 @@
                     @include roboto-medium;
                     font-size: 16px;
                     letter-spacing: 0.05em;
-                    color: #ffffff;
+                    color: $footer-info-title-color;
                 }
                 p {
                     @include roboto-regular;
                     max-width: 350px;
                     margin: 15px 0 20px;
-                    color: $color-text-light;
+                    color: $footer-info-text-color;
                 }
             }
 
@@ -58,11 +58,36 @@
                 flex-basis: auto;
             }
         }
+
+        @media screen and (max-width: $phablet) {
+            &-info {
+                flex-direction: column;
+                text-align: center;
+                margin-right: 0;
+                &-text {
+                    p {
+                        max-width: none;
+                    }
+                }
+                &-ref {
+                    .contact-ref-btn {
+                        a {
+                            margin: 0 auto;
+                        }
+                    }
+                    .contact-ref-tel,
+                    .contact-ref-email,
+                    .contact-ref-address {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
     }
 
     &-bottom {
-        color: #ffffff;
-        background-color: $color-top-and-bottom;
+        color: $footer-bottom-text;
+        background-color: $footer-bottom-bg-color;
         text-align: center;
         @include roboto-regular;
         font-size: 12px;

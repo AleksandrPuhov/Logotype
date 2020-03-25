@@ -9,6 +9,12 @@
         a {
             width: 225px;
         }
+        @media screen and (max-width: $phablet) {
+            flex-direction: column;
+            a {
+                margin-top: 20px;
+            }
+        }
     }
 
     &-list {
@@ -36,8 +42,8 @@
 
         &-item {
             width: 100%;
-            background-color: #f9f9f9;
-            box-shadow: 0px 5px 15px #ececec;
+            background-color: $services-item-bg-color;
+            box-shadow: $services-item-box-shadow;
             padding: 40px 45px 25px;
             text-align: center;
             height: 100%;
@@ -74,7 +80,7 @@
             }
             &-btn-left,
             &-btn-right {
-                color: #373636;
+                color: $services-btn-color;
             }
 
             &-btn-left {

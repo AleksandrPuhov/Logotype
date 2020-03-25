@@ -4,7 +4,7 @@
     text-align: center;
     padding: 10px 40px 10px 20px;
     border: 1px solid $color-primaty;
-    background-color: transparent;
+    background-color: $btn-main-bg-color;
     position: relative;
     display: block;
     transition: $transition-time;
@@ -24,19 +24,19 @@
         top: -1px;
     }
     &:hover {
-        background-color: $color-btn-hover;
+        background-color: $btn-main-hover-color;
     }
 }
 
 .btn-secondary {
     @include roboto-regular;
     font-size: 14px;
-    color: #373636;
-    border: 3px solid #e6e6e6;
+    color: $btn-secondary-text;
+    border: 3px solid $btn-secondary-border-color;
     padding: 7px 20px;
     text-align: center;
     display: block;
-    background-color: transparent;
+    background-color: $btn-secondary-bg-color;
     transition: $transition-time;
     min-width: 225px;
     letter-spacing: 0.03em;

@@ -4,7 +4,7 @@
     min-height: 285px;
     position: relative;
     padding: 50px 0 40px;
-    color: #ffffff;
+    color: $achievements-color-text;
 
     &::before {
         content: "";
@@ -30,7 +30,6 @@
     li {
         flex-basis: 33.333%;
         padding: 0 15px;
-        // min-height: 365px;
     }
     &-item {
         text-align: center;
@@ -44,13 +43,24 @@
 
         h4 {
             @include roboto-medium;
-            @include text-large; 
+            @include text-large;
             margin: 20px 0 15px;
         }
         p {
             line-height: 22px;
         }
-
     }
 
+    @media screen and (max-width: $phablet) {
+        ul {
+            flex-direction: column;
+        }
+        li + li {
+            margin-top: 20px;
+        }
+        li {
+            max-width: 430px;
+            margin: 0 auto;
+        }
+    }
 }

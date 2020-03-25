@@ -1,9 +1,18 @@
 .header {
     &-top {
-        background-color: $color-top-and-bottom;
+        background-color: $header-top-bg-color;
         &-inner {
             display: flex;
             justify-content: space-between;
+
+            @media screen and (max-width: $phone-wide) {
+                .contact-ref-links {
+                    flex-direction: column;
+                }
+                .contact-ref-tel {
+                    margin-bottom: 10px;
+                }
+            }
         }
     }
     &-content {
@@ -20,33 +29,33 @@
             width: 100%;
             display: flex;
             justify-content: flex-end;
-            ul {
+            &-nav {
                 display: flex;
                 position: relative;
-            }
-            a {
-                @include roboto-regular;
-                color: #323232;
-                font-size: 16px;
-                display: block;
-                padding: 8px 16px;
-                margin-left: 10px;
-                border: 1px solid transparent;
-                transition: $transition-time;
-            }
-            a:hover {
-                border: 1px solid $color-primaty;
+
+                a {
+                    @include roboto-regular;
+                    color: $header-nav-text;
+                    font-size: 16px;
+                    display: block;
+                    padding: 8px 16px;
+                    margin-left: 10px;
+                    border: 1px solid transparent;
+                    transition: $transition-time;
+
+                    &:hover {
+                        border: 1px solid $color-primaty;
+                    }
+                }
             }
             &-btn {
                 display: none;
                 height: 30px;
                 width: 30px;
+                background-image: url(../img/icons/bars.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
                 cursor: pointer;
-                transition: $transition-time;
-
-                &:hover {
-                    fill: $color-primaty;
-                }
             }
         }
     }
@@ -57,8 +66,6 @@
             &-inner {
                 flex-direction: column;
                 align-items: center;
-                .contact-ref-links {
-                }
                 .contact-ref-btn {
                     margin-top: 10px;
                 }
@@ -67,19 +74,32 @@
 
         &-content {
             &-menu {
-                ul {
-                    //display: none;
+                &-nav {
+                    display: none;
                     position: absolute;
                     left: 0;
                     top: 100%;
                     width: 100%;
                     z-index: 40;
                     flex-direction: column;
-                    background-color: red;
+                    background-color: $header-nav-bg-color;
+                    padding: 20px 0px;
+
+                    a {
+                        margin: 0 20px;
+                    }
+
+                    &.active {
+                        display: block;
+                    }
                 }
 
                 &-btn {
                     display: block;
+
+                    &.active {
+                        background-image: url(../img/icons/cross.svg);
+                    }
                 }
             }
         }

@@ -20,6 +20,9 @@ $(document).ready(function () {
         dots: false,
     });
 
+    $('.header-content-menu-btn').click ((event) => {
+        $('.header-content-menu-btn, .header-content-menu-nav').toggleClass('active')
+    })
     
     
 

@@ -1,5 +1,5 @@
 .news {
-    background-color: #f9f9f9;
+    background-color: $news-bg-color;
 
     &-inner {
         padding: 70px 0 30px;
@@ -25,8 +25,8 @@
 
             &-item {
                 display: block;
-                background-color: #fff;
-                box-shadow: 0px 5px 15px #f0f0f0;
+                background-color: $news-slide-item-bg-color;
+                box-shadow: $news-item-box-shadow;
                 padding: 0 10px 30px 50px;
                 z-index: 5;
                 transition: $transition-time;
@@ -48,20 +48,20 @@
             h5 {
                 @include roboto-medium;
                 @include text-large;
-                color: $services-title-color;
+                color: $news-title-color;
                 margin: 20px 0 10px;
             }
             p {
-                color: $services-text-color;
+                color: $news-title-color;
             }
             span {
-                color: $services-title-color;
+                color: $news-title-color;
                 display: block;
                 margin-top: 30px;
             }
             &-theme {
                 .owl-stage-outer {
-                    box-shadow: 0px 5px 15px #f0f0f0;
+                    box-shadow: $news-item-box-shadow;
                 }
                 .owl-nav {
                     display: flex;
@@ -108,6 +108,7 @@
             }
 
             a {
+                display: block;
                 transition: $transition-time;
                 &:hover {
                     p {
@@ -118,12 +119,15 @@
 
             &-img {
                 position: relative;
+                height: 190px;
+                width: 262px;
+
                 time {
                     display: block;
                     @include pt-serif-bold;
                     position: absolute;
                     z-index: 5;
-                    color: #ffffff;
+                    color: $news-img-time-color;
                     width: 50px;
                     height: 55px;
                     background-color: $color-primaty;
@@ -139,28 +143,59 @@
             h4 {
                 @include roboto-medium;
                 font-size: 16px;
-                color: $services-title-color;
+                color: $news-title-color;
                 margin: 15px 0 10px;
             }
             p {
-                color: $services-text-color;
+                color: $news-text-color;
             }
         }
-
-        @media screen and (max-width: $tablet-wide-size) {
+    }
+    @media screen and (max-width: $tablet-wide-size) {
+        &-content {
             flex-direction: column;
             &-info {
                 order: -1;
             }
         }
+    }
 
-        @media screen and (max-width: $tablet-small-size) {
+    @media screen and (max-width: $tablet-small-size) {
+        &-content {
             &-slider-theme {
                 .owl-nav button.owl-prev,
                 .owl-nav button.owl-next {
                     height: 50px;
                     width: 50px;
                 }
+            }
+        }
+    }
+    @media screen and (max-width: $phablet) {
+        &-top {
+            flex-direction: column;
+            a {
+                margin-top: 20px;
+            }
+        }
+
+        &-content {
+            &-info {
+                ul {
+                    flex-direction: column;
+                }
+
+                li {
+                    max-width: 450px;
+                    margin: 10px auto;
+                    text-align: center;
+                }
+                &-img {
+                    margin: 0 auto;
+                }
+            }
+            &-slider-item {
+                padding: 0 15px 15px 15px;
             }
         }
     }

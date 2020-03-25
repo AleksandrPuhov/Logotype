@@ -13,12 +13,12 @@
         h3 {
             @include roboto-medium;
             font-size: 24px;
-            color: $services-title-color;
+            color: $top-block-text;
             line-height: 1;
         }
         p {
             margin-top: 15px;
-            color: $services-text-color;
+            color: $top-block-text;
         }
     }
 
@@ -29,7 +29,9 @@
         &-info {
             margin-left: 0;
             max-width: none;
-
         }
+    }
+    @media screen and (max-width: $phablet) {
+        text-align: center;
     }
 }

@@ -1,19 +1,56 @@
-$color-top-and-bottom: #303030;
-
 $color-primaty: #ffc222;
-
-$color-btn-hover: rgba(255,194,34,.2);
-
-$color-text-light: #d3d2d2;
 
 $transition-time: 0.3s;
 
 $background-blending:rgba($color: #000000, $alpha: 0.45);
 
+
+$btn-main-bg-color:transparent;
+$btn-main-hover-color: rgba(255,194,34,.2);
+
+$btn-secondary-border-color:#e6e6e6;
+$btn-secondary-bg-color:transparent;
+$btn-secondary-text:#373636;
+
+$contact-ref-text:#d3d2d2;
+$contact-ref-btn-text:#1b1b1b;
+
+$top-block-text:#5e5e5e;
+
+$header-top-bg-color:#303030;
+$header-nav-text:#323232;
+$header-nav-bg-color:#ffffff;
+
+$slider-item-title:#ffffff;
+$slider-item-text:#d3d2d2;
+$slider-btn-text:#ffffff;
+
+$services-item-bg-color:#f9f9f9;
+$services-item-box-shadow:0px 5px 15px #ececec;
 $services-title-color:#212020;
 $services-text-color:#5e5e5e;
+$services-btn-color:#373636;
+
+$about-color-text:#ffffff;
 
 $form-input-color: #e6e6e6;
+
+$achievements-color-text:#ffffff;
+
+$news-bg-color:#f9f9f9;
+$news-slide-item-bg-color:#ffffff;
+$news-item-box-shadow:0px 5px 15px #f0f0f0;
+$news-title-color:#212020;
+$news-text-color:#5e5e5e;
+$news-img-time-color:#ffffff;
+
+$footer-contacts-bg-color:#595959;
+$footer-info-title-color:#ffffff;
+$footer-info-text-color:#d3d2d2;
+
+$footer-bottom-text:#ffffff;
+$footer-bottom-bg-color:#303030;
+
 
 // $breakpoints: (
 //   "phone"       : 400px,
@@ -28,4 +65,6 @@ $form-input-color: #e6e6e6;
 
 $tablet-wide-size: 990px;
 $tablet-size: 850px;
-$tablet-small-size: 700px
+$tablet-small-size: 700px;
+$phablet: 600px;
+$phone-wide: 480px;

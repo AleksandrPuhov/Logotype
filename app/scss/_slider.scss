@@ -27,7 +27,7 @@
         h2 {
             @include roboto-medium;
             font-size: 30px;
-            color: white;
+            color: $slider-item-title;
             text-transform: uppercase;
             display: block;
             line-height: 36px;
@@ -38,7 +38,7 @@
         p {
             @include pt-serif-regular;
             @include text-large;
-            color: $color-text-light;
+            color: $slider-item-text;
             display: block;
         }
     }
@@ -77,7 +77,7 @@
     &-btn {
         max-width: 180px;
         margin: 20px auto;
-        color: white;
+        color: $slider-btn-text;
     }
 
     @media screen and (max-width: $tablet-small-size) {

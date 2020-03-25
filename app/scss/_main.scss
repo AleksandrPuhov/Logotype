@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -6,19 +6,20 @@ a {
     text-decoration: none;
 }
 
-ul,li {
-   list-style: none;
-   margin: 0;
-   padding: 0;
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body, 
+h1, h2, h3, h4, h5, h6,
+p {
+    padding: 0;
+    margin: 0;
 }
 
 body {
     @include text-main;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-    padding: 0;
-    margin: 0;
 }
 
 .wrapper {
